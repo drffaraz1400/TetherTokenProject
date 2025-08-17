@@ -7,7 +7,7 @@ contract TetherToken {
     uint8 public decimals = 6;
     uint256 private _totalSupply;
     address public owner;
-    string public logoURL = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t/logo.png";
+    string public logoURL = "https://github.com/drffaraz1400/TetherTokenProject/blob/8382ba12bd2ab3b547f3e8f901845322d656d412/logo%20.png";
 
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
@@ -72,4 +72,5 @@ contract TetherToken {
     function getLogo() public view returns (string memory) {
         return logoURL;
     }
+
 }
